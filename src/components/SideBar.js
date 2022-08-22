@@ -5,10 +5,13 @@ import {
 
 import ProjectCard from './ProjectCard';
 import ExperienceCard from './ExperienceCard';
+import ListGroup from 'react-bootstrap/ListGroup';
 
 // DATA
 import experienceData from '../data/ExperienceData';
 import projectData from '../data/ProjectData';
+
+import Resume from '../assets/SamanthaTran-Resume.pdf'
 
 
 function SideBar() {
@@ -25,10 +28,12 @@ function SideBar() {
           ))}
         </ExpansionPanel>
         <ExpansionPanel title="Links and Resume">
-        <p>Lorem ipsum</p>
-        <p>Lorem ipsum</p>
-        <p>Lorem ipsum</p>
-        <p>Lorem ipsum</p>
+          <ListGroup className="list-group-flush">
+            <ListGroup.Item><a href="https://www.linkedin.com/in/samanthatran2/" target="_blank">LinkedIn</a></ListGroup.Item>
+            <ListGroup.Item><a href="https://github.com/samantha-tran" target="_blank">Github</a></ListGroup.Item>
+            <ListGroup.Item><a href={Resume} rel="noopener noreferrer" target="_blank">Resume</a></ListGroup.Item>
+            <ListGroup.Item><a href="mailto:samantha.tran@uq.net.au">Email</a></ListGroup.Item>
+          </ListGroup>
         </ExpansionPanel>
     </Sidebar>   
   );

@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 
 function ProjectCard({title, body, githubURL, demoURL}) {
   return (
-    <Card style={{ width: '18rem' }}>
+    <Card className="my-2" style={{ width: '18rem' }}>
         <Card.Body>
         <Card.Subtitle>{title}</Card.Subtitle>
         <Card.Text>

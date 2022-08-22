@@ -5,10 +5,7 @@ const MessageData = {
     "about": {
         "message": [
             "I am a software engineering student at The University of Queensland. I am due to graduate in Summer 2023\
-            with a bachelor in Software Engineering (Honours).",
-            "In my spare time, I enjoy baking, graphic design and meeting up with my friends!",
-            "I am currently looking for opportunities to strengthen my skills, connections and \
-            gain hands on industry experience."
+            with a bachelor in Software Engineering (Honours)."
         ],
     },
     "skills": [
