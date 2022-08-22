@@ -1,4 +1,6 @@
 import avatar from '../assets/profile-photo.jpeg'
+import moment from 'moment';
+
 import {ChatContainer, 
     MessageList, 
     Message, 
@@ -14,6 +16,9 @@ import {ChatContainer,
 
 
 function Chat() {
+
+  const currentDate = moment().format('dddd, DD MMMM YYYY');
+
   return (
     <ChatContainer>
     <ConversationHeader>
@@ -26,7 +31,7 @@ function Chat() {
       </ConversationHeader.Actions>          
     </ConversationHeader>
       <MessageList>
-      <MessageSeparator content="Saturday, 30 November 2019" />
+      <MessageSeparator content={currentDate} />
       <MessageGroup direction="incoming" sender="Lilly" sentTime="just now" avatarPosition="tl">
         <Avatar src={avatar} name="Lilly" />      
         <MessageGroup.Messages>

@@ -29,8 +29,8 @@ function SideBar() {
         </ExpansionPanel>
         <ExpansionPanel title="Links and Resume">
           <ListGroup className="list-group-flush">
-            <ListGroup.Item><a href="https://www.linkedin.com/in/samanthatran2/" target="_blank">LinkedIn</a></ListGroup.Item>
-            <ListGroup.Item><a href="https://github.com/samantha-tran" target="_blank">Github</a></ListGroup.Item>
+            <ListGroup.Item><a href="https://www.linkedin.com/in/samanthatran2/" target="_blank" rel="noreferrer">LinkedIn</a></ListGroup.Item>
+            <ListGroup.Item><a href="https://github.com/samantha-tran" target="_blank" rel="noreferrer">Github</a></ListGroup.Item>
             <ListGroup.Item><a href={Resume} rel="noopener noreferrer" target="_blank">Resume</a></ListGroup.Item>
             <ListGroup.Item><a href="mailto:samantha.tran@uq.net.au">Email</a></ListGroup.Item>
           </ListGroup>
