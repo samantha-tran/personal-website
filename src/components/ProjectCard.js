@@ -1,15 +1,16 @@
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 
-function ProjectCard() {
+function ProjectCard({title, body, githubURL, demoURL}) {
   return (
     <Card style={{ width: '18rem' }}>
         <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Subtitle>{title}</Card.Subtitle>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          {body}
         </Card.Text>
+        <Button variant="secondary" size="sm" href="#">Github</Button>
+        {demoURL && <Button className="mx-2" variant="secondary" size="sm" href="#">Demo</Button>}
       </Card.Body>
     </Card>
   );

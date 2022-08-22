@@ -5,7 +5,11 @@ import {
 
 import ProjectCard from './ProjectCard';
 import ExperienceCard from './ExperienceCard';
+
+// DATA
 import experienceData from '../data/ExperienceData';
+import projectData from '../data/ProjectData';
+
 
 function SideBar() {
   return (
@@ -16,7 +20,9 @@ function SideBar() {
           ))}
         </ExpansionPanel>
         <ExpansionPanel open title="Projects">
-          <ProjectCard/>
+          {projectData.map((item) => (
+            <ProjectCard title={item.title} body={item.body} githubURL={item.githubURL} demoURL={item.demoURL}/>
+          ))}
         </ExpansionPanel>
         <ExpansionPanel title="Links and Resume">
         <p>Lorem ipsum</p>
