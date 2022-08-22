@@ -1,22 +1,12 @@
 import styles from '@chatscope/chat-ui-kit-styles/dist/default/styles.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import { useState } from 'react';
-import {ChatContainer, 
-        MessageList, 
-        Message, 
-        MessageInput,
-        ConversationHeader,
-        Avatar,
-        VoiceCallButton,
-        VideoCallButton,
-        InfoButton,
-        MessageGroup,
-        MessageSeparator,
-        ExpansionPanel,
-        Sidebar,
-        MainContainer
-         } from '@chatscope/chat-ui-kit-react';
 import MessageData from './data/MessageData';
-import avatar from './assets/profile-photo.jpeg'
+import SideBar from './components/SideBar';
+import Chat from './components/Chat';
+import {MainContainer} from '@chatscope/chat-ui-kit-react';
+
 
 function App() {
 
@@ -27,73 +17,13 @@ function App() {
   return (
     <div className="App">
       <div style={{
-        height: "100vh"
+        height: "100vh",
       }}>
-        <MainContainer responsive> 
-        <ChatContainer>
-          <ConversationHeader>
-            <Avatar src={avatar} name="Samantha Tran" status="available"/>
-            <ConversationHeader.Content userName="Samantha Tran" info="Active Now" />
-            <ConversationHeader.Actions>
-              <VoiceCallButton />
-              <VideoCallButton />
-              <InfoButton />
-            </ConversationHeader.Actions>          
-          </ConversationHeader>
-            <MessageList>
-            <MessageSeparator content="Saturday, 30 November 2019" />
-            <MessageGroup direction="incoming" sender="Lilly" sentTime="just now" avatarPosition="tl">
-              <Avatar src={avatar} name="Lilly" />      
-              <MessageGroup.Messages>
-                <Message model={{
-                  message: "Hello my friend"
-                }} />
-                <Message model={{
-                  message: "Hello my friend"
-                }} />
-                <Message model={{
-                  message: "Hello my friend"
-                }} />
-                <Message model={{
-                  message: "Hello my friend"
-                }} />
-              </MessageGroup.Messages>
-            </MessageGroup>
-            <Message model={{
-              message: "Hello my friend",
-              direction: "outgoing",
-              position: "single"
-            }} />
-          </MessageList>
-          <MessageInput placeholder="Type message here" />        
-        </ChatContainer>
-
-        <Sidebar position="right">
-          <ExpansionPanel open title="Summary">
-            <p>Lorem ipsum</p>
-            <p>Lorem ipsum</p>
-            <p>Lorem ipsum</p>
-            <p>Lorem ipsum</p>
-          </ExpansionPanel>
-          <ExpansionPanel open title="Projects">
-            <p>Lorem ipsum</p>
-            <p>Lorem ipsum</p>
-            <p>Lorem ipsum</p>
-            <p>Lorem ipsum</p>
-          </ExpansionPanel>
-          <ExpansionPanel title="Experiences">
-            <p>Lorem ipsum</p>
-            <p>Lorem ipsum</p>
-            <p>Lorem ipsum</p>
-            <p>Lorem ipsum</p>
-          </ExpansionPanel>
-          <ExpansionPanel title="Links and Resume">
-            <p>Lorem ipsum</p>
-            <p>Lorem ipsum</p>
-            <p>Lorem ipsum</p>
-            <p>Lorem ipsum</p>
-          </ExpansionPanel>
-        </Sidebar>   
+        <MainContainer 
+        responsive
+        style={{fontSize: "1.1em"}}> 
+            <Chat/>
+            <SideBar/>
         </MainContainer>         
       </div>
     </div>
