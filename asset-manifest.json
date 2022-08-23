@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/personal-website/static/css/main.eadfb986.css",
-    "main.js": "/personal-website/static/js/main.83894ac3.js",
-    "static/media/SamanthaTran-Resume.pdf": "/personal-website/static/media/SamanthaTran-Resume.f4ac3a9d40eeaaf0faa0.pdf",
-    "index.html": "/personal-website/index.html",
-    "main.eadfb986.css.map": "/personal-website/static/css/main.eadfb986.css.map",
-    "main.83894ac3.js.map": "/personal-website/static/js/main.83894ac3.js.map"
+    "main.css": "/static/css/main.eadfb986.css",
+    "main.js": "/static/js/main.20ec69ef.js",
+    "static/media/SamanthaTran-Resume.pdf": "/static/media/SamanthaTran-Resume.f4ac3a9d40eeaaf0faa0.pdf",
+    "index.html": "/index.html",
+    "main.eadfb986.css.map": "/static/css/main.eadfb986.css.map",
+    "main.20ec69ef.js.map": "/static/js/main.20ec69ef.js.map"
   },
   "entrypoints": [
     "static/css/main.eadfb986.css",
-    "static/js/main.83894ac3.js"
+    "static/js/main.20ec69ef.js"
   ]
 }
