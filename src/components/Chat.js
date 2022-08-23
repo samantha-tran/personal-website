@@ -1,6 +1,4 @@
-import { useContext } from 'react';
 import MessageOptions from './MessageOptions';
-import MessageContext from '../context/MessageContext';
 import Messages from './Messages';
 import ChatHeader from './ChatHeader';
 
@@ -9,7 +7,6 @@ import {ChatContainer,
     MessageInput,
     InputToolbox,
     ConversationHeader,
-    AttachmentButton,
      } from '@chatscope/chat-ui-kit-react';
 
 function Chat() {

@@ -22,7 +22,7 @@ function SideBar() {
             <ExperienceCard title={item.title} subtitle={item.subtitle} body={item.body}/>
           ))}
         </ExpansionPanel>
-        <ExpansionPanel open title="Projects">
+        <ExpansionPanel title="Projects">
           {projectData.map((item) => (
             <ProjectCard title={item.title} body={item.body} githubURL={item.githubURL} demoURL={item.demoURL}/>
           ))}
