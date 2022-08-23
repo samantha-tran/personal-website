@@ -4,6 +4,7 @@ import {
 import options from '../data/OptionsData'
 
 function MessageOptions() {
+
   return (
     <div className="d-flex p-2 overflow-auto w-100 justify-content-evenly">
           {options.map((item) => (

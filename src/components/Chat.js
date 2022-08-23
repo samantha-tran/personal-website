@@ -1,6 +1,7 @@
 import avatar from '../assets/profile-photo.jpeg'
 import moment from 'moment';
-import Stack from 'react-bootstrap/Stack';
+import MessageOptions from './MessageOptions';
+
 import {ChatContainer, 
     MessageList, 
     Message, 
@@ -14,7 +15,7 @@ import {ChatContainer,
     MessageInput,
     InputToolbox,
      } from '@chatscope/chat-ui-kit-react';
-import MessageOptions from './MessageOptions';
+
 
 
 function Chat() {
@@ -61,7 +62,6 @@ function Chat() {
           <MessageOptions/>
     </InputToolbox>
     <MessageInput disabled placeholder="Choose an option below" />
-        
   </ChatContainer>
   );
 }
