@@ -22,7 +22,6 @@ function Chat() {
           <MessageOptions/>
     </InputToolbox>
     <MessageInput disabled placeholder="Choose an option below" attachButton={false}/>
-    <AttachmentButton></AttachmentButton>
   </ChatContainer>
   );
 }
