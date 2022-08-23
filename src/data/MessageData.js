@@ -1,7 +1,4 @@
 const MessageData = {
-    "introduction": {
-        "message": ["Hi there! My name is Samantha. It is nice to meet you"]
-    },
     "about": {
         "message": [
             "I am a software engineering student at The University of Queensland. I am due to graduate in Summer 2023\

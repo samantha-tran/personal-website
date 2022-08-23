@@ -7,6 +7,9 @@ export const MessageProvider = ({children}) => {
     const [messageHistory, setMessageHistory] = useState([{
         "message": ["Hi there! My name is Samantha. It is nice to meet you"],
         "direction": "incoming"
+    }, {
+        "message": ["bob","there","where"],
+        "direction": "outgoing"
     }])
 
     const addOutgoingMessage = (option) => {
