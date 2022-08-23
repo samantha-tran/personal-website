@@ -13,8 +13,6 @@ import {ChatContainer,
 
 function Chat() {
 
-  const {messageHistory} = useContext(MessageContext)
-
   return (
     <ChatContainer>
     <ChatHeader as={ConversationHeader}/>

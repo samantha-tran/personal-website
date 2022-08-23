@@ -1,4 +1,6 @@
 import { createContext, useState } from "react";
+import messageData from "../data/MessageData"
+import optionsData from "../data/OptionsData"
 
 const MessageContext = createContext()
 
@@ -7,23 +9,22 @@ export const MessageProvider = ({children}) => {
     const [messageHistory, setMessageHistory] = useState([{
         "message": ["Hi there! My name is Samantha. It is nice to meet you"],
         "direction": "incoming"
-    }, {
-        "message": ["bob","there","where"],
-        "direction": "outgoing"
     }])
 
-    const addOutgoingMessage = (option) => {
+    const selectOption = (option) => {
         setMessageHistory([...messageHistory, {
-            "message": "test",
-            "direction": "outgoing",
-            "position": "single"
+            "message": optionsData.find(op => op.category === option).message,
+            "direction": "outgoing"
+        }, {
+            "message": messageData[option.toLowerCase()],
+            "direction": "incoming"
         }])
     }
 
     return <MessageContext.Provider value={{
         messageHistory,
         setMessageHistory,
-        addOutgoingMessage
+        selectOption
     }}>
         {children}
     </MessageContext.Provider>
