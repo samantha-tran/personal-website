@@ -1,7 +1,7 @@
 const OptionsData = [
         {
             "category": "About",
-            "message": ["Tell me about youtself"]
+            "message": ["Tell me about yourself"]
         },
         {
             "category": "Skills",
@@ -21,7 +21,7 @@ const OptionsData = [
         },
         {
             "category": "Links",
-            "message": ["Can I see your Resume, Github or LinkedIn?"]
+            "message": ["Can I see Github or Resume?"]
         }
     ]
 

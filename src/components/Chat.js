@@ -9,6 +9,7 @@ import {ChatContainer,
     MessageInput,
     InputToolbox,
     ConversationHeader,
+    AttachmentButton,
      } from '@chatscope/chat-ui-kit-react';
 
 function Chat() {
@@ -20,7 +21,8 @@ function Chat() {
     <InputToolbox>
           <MessageOptions/>
     </InputToolbox>
-    <MessageInput disabled placeholder="Choose an option below" />
+    <MessageInput disabled placeholder="Choose an option below" attachButton={false}/>
+    <AttachmentButton></AttachmentButton>
   </ChatContainer>
   );
 }

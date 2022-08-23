@@ -5,7 +5,6 @@ import {
     Avatar,
     VoiceCallButton,
     VideoCallButton,
-    InfoButton,
      } from '@chatscope/chat-ui-kit-react';
 
 function ChatHeader() {
@@ -17,7 +16,6 @@ function ChatHeader() {
       <ConversationHeader.Actions>
         <VoiceCallButton />
         <VideoCallButton />
-        <InfoButton />
       </ConversationHeader.Actions>          
     </ConversationHeader>
   );
