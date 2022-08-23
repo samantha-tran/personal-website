@@ -3,14 +3,19 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import SideBar from './components/SideBar';
 import Chat from './components/Chat';
 import {MainContainer} from '@chatscope/chat-ui-kit-react';
+import useVH from 'react-viewport-height';
 import { MessageProvider } from './context/MessageContext';
 
 
 function App() {
+
+  // mobile vh adjustments
+  const vh = useVH();
+
   return (
       <MessageProvider>
         <MainContainer
-        className="vh-100" 
+        style={{ height: `${100 * vh}px` }}
         responsive> 
             <Chat/>
             <SideBar/>
