@@ -20,8 +20,7 @@ function App() {
         height: "100vh",
       }}>
         <MainContainer 
-        responsive
-        style={{fontSize: "1.1em"}}> 
+        responsive> 
             <Chat/>
             <SideBar/>
         </MainContainer>         

@@ -1,10 +1,9 @@
 import avatar from '../assets/profile-photo.jpeg'
 import moment from 'moment';
-
+import Stack from 'react-bootstrap/Stack';
 import {ChatContainer, 
     MessageList, 
     Message, 
-    MessageInput,
     ConversationHeader,
     Avatar,
     VoiceCallButton,
@@ -12,7 +11,10 @@ import {ChatContainer,
     InfoButton,
     MessageGroup,
     MessageSeparator,
+    MessageInput,
+    InputToolbox,
      } from '@chatscope/chat-ui-kit-react';
+import MessageOptions from './MessageOptions';
 
 
 function Chat() {
@@ -55,7 +57,11 @@ function Chat() {
         position: "single"
       }} />
     </MessageList>
-    <MessageInput placeholder="Type message here" />        
+    <InputToolbox>
+          <MessageOptions/>
+    </InputToolbox>
+    <MessageInput disabled placeholder="Choose an option below" />
+        
   </ChatContainer>
   );
 }

@@ -44,15 +44,7 @@ const MessageData = {
             "sfsdf",
             "sdfdsf"
         ]
-    },
-    "options": [
-        {"about": "Tell me about yourself"},
-        {"skills": "What are your skills"},
-        {"work": "Can I see your work experience?"},
-        {"projects": "What projects have you worked on?"},
-        {"contact": "How can I contact you?"},
-        {"links": "Can I see your Resume, Github or LinkedIn?"}
-    ]
+    }
 }
 
 export default MessageData
