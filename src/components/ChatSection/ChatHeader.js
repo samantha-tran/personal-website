@@ -1,4 +1,4 @@
-import avatar from '../assets/profile-photo.jpeg'
+import avatar from '../../assets/profile-photo.jpeg'
 
 import {
     ConversationHeader,

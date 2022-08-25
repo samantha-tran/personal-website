@@ -1,18 +1,9 @@
-import {
-    ExpansionPanel,
-    Sidebar
-} from '@chatscope/chat-ui-kit-react';
-
-import ProjectCard from './ProjectCard';
-import ExperienceCard from './ExperienceCard';
-import ListGroup from 'react-bootstrap/ListGroup';
-
-// DATA
 import experienceData from '../data/ExperienceData';
 import projectData from '../data/ProjectData';
-
 import Resume from '../assets/SamanthaTran-Resume.pdf'
-
+import {ExperienceCard, ProjectCard} from './InfoSection'
+import { ExpansionPanel, Sidebar } from '@chatscope/chat-ui-kit-react';
+import ListGroup from 'react-bootstrap/ListGroup';
 
 function SideBar() {
   return (

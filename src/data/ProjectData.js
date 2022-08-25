@@ -2,8 +2,7 @@ const projectData = [
     {
         "title": "Pinterest Board Collager",
         "body": "Program to scrape images from a Pinterest board and output an optimised collage of said users. Created in Python using Selenium to bypass Pinterest’s lazy loading and restricted viewing for non-signed in users and PILLOW to collage the images. ",
-        "githubURL": "https://github.com/samantha-tran/pinterest-collage-maker",
-        "demoURL": "test"
+        "githubURL": "https://github.com/samantha-tran/pinterest-collage-maker"
     },
     {
         "title": "LearnToSew",

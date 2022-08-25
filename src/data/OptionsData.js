@@ -5,7 +5,7 @@ const OptionsData = [
         },
         {
             "category": "Skills",
-            "message": ["What are your skills"]
+            "message": ["What are your skills?"]
         },
         {
             "category": "Work",

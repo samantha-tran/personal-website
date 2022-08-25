@@ -1,6 +1,6 @@
 const MessageData = {
     "about": [
-            "I am a software engineering student at The University of Queensland. I am due to graduate in Summer 2023 with a bachelor in Software Engineering (Honours)."
+            "I am a software engineering student at The University of Queensland. I am due to graduate in Summer 2023 with a bachelor in Software Engineering."
         ],
     "skills": [
         "The programming languges I am familar with are: Python, Java, HTML/CSS/Javascript, Haskell and SQL",
@@ -26,7 +26,7 @@ const MessageData = {
     ,
     "links": [
             "github.com/samantha-tran",
-            "Click the attachment button to view me resume!"
+            "Click the attachment button to view my resume!"
         ]
 }
 

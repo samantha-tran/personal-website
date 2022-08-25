@@ -1,7 +1,4 @@
-import MessageOptions from './MessageOptions';
-import Messages from './Messages';
-import ChatHeader from './ChatHeader';
-
+import {ChatHeader, MessageOptions, Messages} from './ChatSection'
 import {ChatContainer, 
     MessageList, 
     MessageInput,

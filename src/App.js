@@ -1,10 +1,11 @@
 import styles from '@chatscope/chat-ui-kit-styles/dist/default/styles.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import useVH from 'react-viewport-height';
 import SideBar from './components/SideBar';
 import Chat from './components/Chat';
 import {MainContainer} from '@chatscope/chat-ui-kit-react';
-import useVH from 'react-viewport-height';
 import { MessageProvider } from './context/MessageContext';
+
 
 
 function App() {

@@ -2,10 +2,10 @@ import {
   Button,
   AttachmentButton
 } from "@chatscope/chat-ui-kit-react";
-import options from '../data/OptionsData'
 import { useContext } from "react";
-import MessageContext from "../context/MessageContext";
-import Resume from '../assets/SamanthaTran-Resume.pdf'
+import MessageContext from "../../context/MessageContext";
+import options from '../../data/OptionsData'
+import Resume from '../../assets/SamanthaTran-Resume.pdf'
 
 
 function MessageOptions() {

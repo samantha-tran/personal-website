@@ -1,6 +1,6 @@
 import moment from 'moment';
-import avatar from '../assets/profile-photo.jpeg'
-import MessageContext from '../context/MessageContext';
+import avatar from '../../assets/profile-photo.jpeg'
+import MessageContext from '../../context/MessageContext';
 import { useContext } from 'react';
 
 
